@@ -3,11 +3,11 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const name = 'John Doe';
+    const foo = () => 'Bar';
 
     return (
       <Fragment>
-        <h1>Hello {name.toUpperCase()}</h1>
+        <h1>Hello {foo()}</h1>
       </Fragment>
     );
   }
