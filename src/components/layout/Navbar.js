@@ -13,3 +13,5 @@ export class Navbar extends Component {
 }
 
 export default Navbar;
+
+// 4:32 / 10:47 of Section 3: Video 10
