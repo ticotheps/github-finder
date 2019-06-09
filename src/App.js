@@ -4,7 +4,7 @@ import './App.css';
 class App extends Component {
   render() {
     const name = 'John Doe';
-    const loading = true;
+    const loading = false;
 
     if (loading) {
       return <h4>Loading...</h4>;
