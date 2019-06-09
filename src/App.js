@@ -2,12 +2,17 @@ import React, { Fragment, Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  foo = () => 'Bars';
-
   render() {
+    const name = 'John Doe';
+    const loading = true;
+
+    if (loading) {
+      return <h4>Loading...</h4>;
+    }
+
     return (
       <Fragment>
-        <h1>Hello {this.foo()}</h1>
+        <h1>Hello {name}</h1>
       </Fragment>
     );
   }
