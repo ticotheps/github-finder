@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <Fragment>
         <Navbar />
-        <Users />
+        <div className='container'>
+          <Users />
+        </div>
       </Fragment>
     );
   }
