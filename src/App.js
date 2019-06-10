@@ -17,3 +17,5 @@ class App extends Component {
 }
 
 export default App;
+
+// Section 3, video 13: Stateless Functional Components
