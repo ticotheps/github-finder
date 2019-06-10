@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
+        <Navbar title='GitHub Finder' />
       </Fragment>
     );
   }
