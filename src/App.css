@@ -217,7 +217,8 @@ img {
 
 .btn-block {
   display: block;
-  width: 25%;
+  margin: 10px auto;
+  width: 100%;
   border-radius: 3px;
 }
 
@@ -309,6 +310,21 @@ img {
 }
 
 /* Forms */
+
+.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+.clear-btn {
+  background-color: darkgrey;
+  color: white;
+  border-radius: 3px;
+  padding: 0.4rem 1.3rem;
+  margin: 10px auto;
+  width: 100%;
+}
+
 input {
   margin: 1.2rem 0;
 }
