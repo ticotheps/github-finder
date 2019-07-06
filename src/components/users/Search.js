@@ -8,7 +8,7 @@ export class Search extends Component {
           <input
             type='text'
             name='text'
-            placeholder='Search GitHub Follows...'
+            placeholder='Search your List of follows on GitHub...'
           />
           <input
             type='submit'
