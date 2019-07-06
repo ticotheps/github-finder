@@ -1,11 +1,14 @@
 import React, { Fragment, Component } from 'react';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users';
+import axios from 'axios';
 import './App.css';
 
 class App extends Component {
   componentDidMount() {
-    console.log(123);
+    axios
+      .get('https://api.github.com/users')
+      .then(res => console.log(res.data));
   }
 
   render() {
