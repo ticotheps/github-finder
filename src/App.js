@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users';
 import Search from './components/users/Search';
@@ -39,17 +40,19 @@ class App extends Component {
     const { users, loading } = this.state;
 
     return (
-      <Fragment>
-        <Navbar />
-        <div className='container'>
-          <Search
-            searchUsers={this.searchUsers}
-            clearUsers={this.clearUsers}
-            showClear={users.length > 0 ? true : false}
-          />
-          <Users loading={loading} users={users} />
-        </div>
-      </Fragment>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <div className='container'>
+            <Search
+              searchUsers={this.searchUsers}
+              clearUsers={this.clearUsers}
+              showClear={users.length > 0 ? true : false}
+            />
+            <Users loading={loading} users={users} />
+          </div>
+        </Fragment>
+      </Router>
     );
   }
 }
