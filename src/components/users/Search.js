@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../../App.css';
 
 export class Search extends Component {
   state = {
     text: '',
+  };
+
+  static propTypes = {
+    searchUsers: PropTypes.func.isRequired,
   };
 
   onSubmit = e => {
