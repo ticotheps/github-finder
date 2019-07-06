@@ -23,7 +23,7 @@ class App extends Component {
       <Fragment>
         <Navbar />
         <div className='container'>
-          <Users />
+          <Users loading={this.state.loading} users={this.state.users} />
         </div>
       </Fragment>
     );
