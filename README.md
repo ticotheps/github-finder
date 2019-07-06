@@ -1,3 +1,7 @@
+# Tico's GitHub Finder App
+
+Live Site: https://tico-github-finder.netlify.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
