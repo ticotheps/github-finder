@@ -21,7 +21,7 @@ export class Search extends Component {
             type='text'
             name='text'
             value={this.state.text}
-            placeholder='Search your List of Github Follows...'
+            placeholder='Search for a GitHub user...'
             onChange={this.onChange}
           />
           <input
