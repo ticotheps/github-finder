@@ -10,6 +10,7 @@ class App extends Component {
   state = {
     users: [],
     loading: false,
+    alert: null,
   };
 
   async componentDidMount() {
@@ -36,6 +37,11 @@ class App extends Component {
   // Clears users from state
   clearUsers = () => this.setState({ users: [], loading: false });
 
+  // Sets Alert
+  setAlert = (msg, type) => {
+    this.setState({ alert: { msg: msg, type: type } });
+  };
+
   render() {
     const { users, loading } = this.state;
 
@@ -48,6 +54,7 @@ class App extends Component {
               searchUsers={this.searchUsers}
               clearUsers={this.clearUsers}
               showClear={users.length > 0 ? true : false}
+              setAlert={this.setAlert}
             />
             <Users loading={loading} users={users} />
           </div>
