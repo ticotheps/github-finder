@@ -10,6 +10,7 @@ export class Search extends Component {
   static propTypes = {
     searchUsers: PropTypes.func.isRequired,
     clearUsers: PropTypes.func.isRequired,
+    showClear: PropTypes.bool.isRequired,
   };
 
   onSubmit = e => {
@@ -30,19 +31,17 @@ export class Search extends Component {
             placeholder='Search for a GitHub user...'
             onChange={this.onChange}
           />
-          <div className='form-button'>
-            <input
-              type='submit'
-              name='Search'
-              className='btn btn-dark btn-block'
-            />
-          </div>
+          <input
+            type='submit'
+            name='Search'
+            className='btn btn-dark btn-block'
+          />
         </form>
-        <div className='form-button'>
+        {this.props.showClear && (
           <button className='btn clear-btn' onClick={this.props.clearUsers}>
             Clear
           </button>
-        </div>
+        )}
       </div>
     );
   }

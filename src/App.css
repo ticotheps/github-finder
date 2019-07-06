@@ -311,11 +311,6 @@ img {
 
 /* Forms */
 
-.form-button {
-  display: flex;
-  justify-content: center;
-}
-
 .clear-btn {
   background-color: darkgrey;
   color: white;
