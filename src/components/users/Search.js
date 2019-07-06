@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import '../../App.css';
 
 export class Search extends Component {
+  state = {
+    text: '',
+  };
+
+  onChange = e => {
+    this.setState({ text: e.target.value });
+  };
+
   render() {
     return (
       <div>
@@ -9,7 +17,9 @@ export class Search extends Component {
           <input
             type='text'
             name='text'
-            placeholder='Search your List of follows on GitHub...'
+            value={this.state.text}
+            placeholder='Search your List of Github Follows...'
+            onChange={this.onChange}
           />
           <input
             type='submit'
